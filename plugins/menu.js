@@ -12,17 +12,17 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 const config = await readEnv();
     
-    let menu ={
-        'Welcome to the Main Menu:', // Main message
-        [
-            { body: 'Commands List' },  // Button 1
-            { body: 'Help' },           // Button 2
-            { body: 'Contact Us' },      // Button 3
-            { body: 'Sub Menu' }         // Submenu button
-        ], 
-        'Main Menu',                    // Title/Header
-        'Choose an option from below'   // Footer text
-    );
+    let mainMenu = new Buttons(
+    'Welcome to the Main Menu:', // Main message
+    [
+        { body: 'Commands List' },  // Button 1
+        { body: 'Help' },           // Button 2
+        { body: 'Contact Us' },      // Button 3
+        { body: 'Sub Menu' }         // Sub menu button
+    ],
+    'Main Menu',                    // Title/Header
+    'Choose an option from below'   // Footer text
+);
 
     // Sending the main menu to the user
     await client.sendMessage(message.from, mainMenu);
