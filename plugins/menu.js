@@ -12,7 +12,7 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 const config = await readEnv();
     
-    let menu = new Buttons(
+    let menu = new Buttons{
         'Welcome to the Main Menu:', // Main message
         [
             { body: 'Commands List' },  // Button 1
