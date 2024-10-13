@@ -1,34 +1,18 @@
+const {readEnv} = require('../lib/database')
+const {cmd , commands} = require('../command')
 
-const { Client, Buttons } = require('whatsapp-web.js'); // Importing the necessary classes
-const { readEnv } = require('./lib/database');
-const { cmd, commands } = require('./command');
-
-// Initialize the WhatsApp client
-const client = new Client();
-
-client.on('qr', (qr) => {
-    // Generate and display the QR code to scan
-    qrcode.generate(qr, { small: true });
-});
-
-client.on('ready', () => {
-    console.log('Client is ready!');
-});
-
-// Using the readEnv function from the database module
-const config = readEnv();
-console.log('Config:', config);
-
-// Main menu command setup
 cmd({
-    pattern: "mainmenu",  // Main menu pattern
-    desc: "Show main menu with options", // Description for main menu
-    category: "main",     // Command category
+    pattern: "menu",
+    desc: "get cmd list ",
+    category: "main",
     react: "⚡",
     filename: __filename
-}, async (message) => {
-    // Creating a button menu for the main menu
-    let mainMenu = new Buttons(
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+try{
+const config = await readEnv();
+    
+    let menu = new Buttons(
         'Welcome to the Main Menu:', // Main message
         [
             { body: 'Commands List' },  // Button 1
