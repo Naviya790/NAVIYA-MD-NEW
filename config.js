@@ -8,5 +8,3 @@ module.exports = {
 SESSION_ID: process.env.SESSION_ID || "APFTUYzI#BMxRowrfS54pslQMsqAmvqWQuOxSgTmHOGWlWl937J8",
 MONGODB: process.env.MONGODB || "mongodb://mongo:nCNtvmpZQfbmQyteQXzHtYWyzpjMSpcp@autorack.proxy.rlwy.net:55349",
 };
-
-
