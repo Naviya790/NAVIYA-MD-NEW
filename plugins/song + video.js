@@ -7,12 +7,12 @@ cmd({
     pattern: "song",
     desc: "download songs",
     category: "download",
-    react: "🎻",
+    react: "📍",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-if (!q) return reply("පුක සුදුද ලිමාෂා ඔයාගේ")
+if (!q) return reply("Give me yt url ")
 const search = await yts(q)
 const data = search.videos[0];
 const url = data.url
@@ -66,7 +66,7 @@ cmd({
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-if (!q) return reply("depan hutto url ekkak 😒")
+if (!q) return reply("give me video url ")
 const search = await yts(q)
 const data = search.videos[0];
 const url = data.url
