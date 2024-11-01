@@ -30,6 +30,8 @@ async (conn, mek, m, { from, args, reply }) => {
             response += `   Views: ${formatNumber(video.views)}\n`;
             response += `   Uploaded: ${video.ago}\n`;
             response += `   Link: ${video.url}\n\n`;
+
+          > ᴘᴏᴡᴇʀ ʙʏ ɴᴀᴠɪʏᴀ-ᴍᴅ
         });
 
         response += `\nShowing top 20 results for "${query}"\n`;
