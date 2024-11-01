@@ -11,7 +11,7 @@ var cants = "I cant find this anime."
 cmd({
     pattern: "loli",
     alias: ["imgloli"],
-    react: '🧧',
+    react: '🧚‍♂️',
     desc: "Download anime loli images.",
     category: "anime",
     use: '.loli',
@@ -23,7 +23,7 @@ try{
 let res = await axios.get('https://api.lolicon.app/setu/v2?num=1&r18=0&tag=lolicon')
 let wm = `🧧 Random loli image
 
-© nethu-md v${require("../package.json").version} (Test)\n©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɢʜᴏꜱᴛ -ᴍᴅ`
+© ɴᴀᴠɪʏᴀ-ᴍᴅ v${require("../package.json").version} (Test)\n©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴀᴠɪʏᴀ-ᴍᴅ`
 await conn.sendMessage(from, { image: { url: res.data.data[0].urls.original }, caption: wm}, { quoted: mek })
 } catch (e) {
 reply(cants)
@@ -35,7 +35,7 @@ console.log(e)
 cmd({
     pattern: "waifu",
     alias: ["imgwaifu"],
-    react: '🧧',
+    react: '🍑',
     desc: "Download anime waifu images.",
     category: "anime",
     use: '.waifu',
@@ -46,7 +46,7 @@ try{
 let res = await axios.get('https://api.waifu.pics/sfw/waifu')
 let wm = `🧧 Random Waifu image
 
-© nethu-md v${require("../package.json").version} (Test)\n©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɢʜᴏꜱᴛ-ᴍᴅ`
+© ɴᴀᴠɪʏᴀ-ᴍᴅ v${require("../package.json").version} (Test)\n©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴀᴠɪʏᴀ-ᴍᴅ`
 await conn.sendMessage(from, { image: { url: res.data.url }, caption: wm}, { quoted: mek })
 } catch (e) {
 reply(cants)
@@ -69,7 +69,7 @@ try{
 let res = await axios.get('https://api.waifu.pics/sfw/neko')
 let wm = `🧧 Random neko image
 
-© nethu-md v${require("../package.json").version} (Test)\n©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɢʜᴏꜱᴛ-ᴍᴅ`
+© ɴᴀᴠɪʏᴀ-ᴍᴅ v${require("../package.json").version} (Test)\n©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴀᴠɪʏᴀ-ᴍᴅ`
 await conn.sendMessage(from, { image: { url: res.data.url  }, caption: wm}, { quoted: mek })
 } catch (e) {
 reply(cants)
@@ -81,7 +81,7 @@ console.log(e)
 cmd({
     pattern: "megumin",
     alias: ["imgmegumin"],
-    react: '🧧',
+    react: '🐣',
     desc: "Download anime megumin images.",
     category: "anime",
     use: '.megumin',
@@ -92,7 +92,7 @@ try{
 let res = await axios.get('https://api.waifu.pics/sfw/megumin')
 let wm = `🧧 Random megumin image
 
-© nethu-md v${require("../package.json").version} (Test)\n©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɢʜᴏꜱᴛ-ᴍᴅ`
+© ɴᴀᴠɪʏᴀ-ᴍᴅ v${require("../package.json").version} (Test)\n©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴀᴠɪʏᴀ-ᴍᴅ`
 await conn.sendMessage(from, { image: { url: res.data.url }, caption: wm}, { quoted: mek })
 } catch (e) {
 reply(cants)
@@ -115,7 +115,7 @@ try{
 let res = await axios.get('https://api.waifu.im/search/?included_tags=maid')
 let wm = `🧧 Random maid image
 
-© nethu-md v${require("../package.json").version} (Test)\n©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɢʜᴏꜱᴛ-ᴍᴅ`
+© ɴᴀᴠɪʏᴀ-ᴍᴅ v${require("../package.json").version} (Test)\n©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴀᴠɪʏᴀ-ᴍᴅ`
 await conn.sendMessage(from, { image: { url: res.data.images[0].url  }, caption: wm}, { quoted: mek })
 } catch (e) {
 reply(cants)
@@ -127,7 +127,7 @@ console.log(e)
 cmd({
     pattern: "awoo",
     alias: ["imgawoo"],
-    react: '🧧',
+    react: '🧚',
     desc: "Download anime awoo images.",
     category: "anime",
     use: '.awoo',
@@ -138,7 +138,7 @@ try{
 let res = await axios.get('https://api.waifu.pics/sfw/awoo')
 let wm = `🧧 Random awoo image
 
-© nethu-md v${require("../package.json").version} (Test)\n©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɢʜᴏᴅᴛ-ᴍᴅ`
+© ɴᴀᴠɪʏᴀ-ᴍᴅ v${require("../package.json").version} (Test)\n©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴀᴠɪʏᴀ-ᴍᴅ`
 await conn.sendMessage(from, { image: { url: res.data.url }, caption: wm}, { quoted: mek })
 } catch (e) {
 reply(cants)
